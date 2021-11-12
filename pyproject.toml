@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 100
+skip-string-normalization = true
+exclude = '''
+/(
+    \.eggs
+  | \.git
+)/
+'''
+
+[tool.isort]
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+default_section = "THIRDPARTY"
+no_lines_before = "LOCALFOLDER"
